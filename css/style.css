@@ -1052,6 +1052,11 @@ button {
     -moz-grid-gap: 17px;
     grid-gap: 17px;
   }
+
+  .hero__left-desrc {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 
 /**/
