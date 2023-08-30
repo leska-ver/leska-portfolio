@@ -101,6 +101,12 @@ ul {
   list-style: none;
 }
 
+button {
+  background-color: transparent;  
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
 .wrapper {    
   min-height: 100%;
   /* overflow: hidden; не любить sticky */
@@ -134,7 +140,7 @@ ul {
   line-height: 1;
 }
 
-h4 {
+.h4 {
   font-size: 20px;
   line-height: 1;
 }
@@ -144,10 +150,10 @@ h4 {
   line-height: 30px;
 }
 
-.button {
-  border: 1px solid transparent;
-  background-color: transparent;
-  cursor: pointer;
+.button {/*Стили забрала у hero__right-item*/
+  display: flex;/*Для выравнивание карточек hero__right-info*/
+  flex-direction: column;/*Для выравнивание карточек hero__right-info*/
+  transition: all 3s; 
 }
 
 /*** modal-Модальное окно***/
@@ -187,7 +193,7 @@ h4 {
 .modal-wrap {
   display: inline-block;  
   margin: 39px;
-  max-width: 500px;
+  max-width: 1000px;
   width: 100%;
   vertical-align: middle;
   text-align: left;
@@ -197,7 +203,7 @@ h4 {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding: 150px 50px;
   border-radius: 10px;
   width: 100%;
   height: max-content;  
@@ -214,6 +220,7 @@ h4 {
   outline: none; 
   border: 1px solid transparent; 
   font-size: 25px;
+  color: var(--color-sanMarino);
   -webkit-transition: color .4s ease-in-out, background-color .4s ease-in-out;
   -ms-transition: color .4s ease-in-out, background-color .4s ease-in-out;
   -moz-transition: color .4s ease-in-out, background-color .4s ease-in-out;
@@ -232,10 +239,64 @@ h4 {
 }
 
 .modal-close:active {
-  background-color: transparent;
   opacity: .8;
 }
 /* // Крест выключатель модального окна*/
+
+.modal-container {
+  position: relative;
+}
+
+.modal-container::before {
+  top: 20px;
+  left: 20px;
+}
+
+.modal-container::before, .modal-container::after {
+  content: "";
+  position: absolute;
+  font-size: 25px;
+  opacity: .2;
+}
+
+.modal-container::after {
+  bottom: 20px;
+  right: 20px;
+}
+
+.modal-info {
+  margin: auto;
+}
+
+.modal-link {
+  display: block;
+  border-bottom: 2px solid transparent;
+  font-size: 45px;
+  line-height: 70px;
+  color: var(--color-sanMarino);
+  -webkit-transition: borde .4s ease-in-out;
+  -ms-transition: borde .4s ease-in-out;
+  -moz-transition: borde .4s ease-in-out;
+  -o-transition: borde .4s ease-in-out;
+  transition: borde .4s ease-in-out;
+}
+
+.modal-link:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.modal-link:focus {
+  outline: none;
+  color: var(--color-vk);
+}
+
+.modal-link:hover {
+  border-bottom: 2px solid var(--color-sanMarino);
+}
+
+.modal-link:active {
+  opacity: .7;
+}
 /*** // modal-Модальное окно***/
 
 /***Шапка header-1920px***/
@@ -547,11 +608,7 @@ h4 {
 }
 
 .hero__right-item {
-  display: flex;/*Для выравнивание карточек hero__right-info*/
-  flex-direction: column;/*Для выравнивание карточек hero__right-info*/
   margin-right: 30px;
-  background-color: transparent;
-  transition: all 3s; 
 }
 
 .hero__right-img {
@@ -643,6 +700,10 @@ h4 {
   background-image: url("../img/cats.jpg");
 }
 
+.hero__right-sublist {
+  text-align: left;
+}
+
 .hero__right-subitem {
   display: inline-block;
   margin-right: 20px;
@@ -700,6 +761,7 @@ h4 {
   font-size: 20px;
   line-height: 120%;
   color: var(--color-white);
+  text-align: left;
 }
 
 .hero__right-subdesrc  {
@@ -707,6 +769,76 @@ h4 {
   font-family: 'InterRegular', sans-serif;
   color: var(--color-scorpion);
 }
+
+/*Модалки*/
+.hero__right-cats-product::before, .hero__right-cats-product::after {
+  content: "--Cats--";
+}
+
+.hero__right-tatarLanguage-product::before, .hero__right-tatarLanguage-product::after {
+  content: "--TatarLanguage--";
+}
+
+.hero__right-logoShop-product::before, .hero__right-logoShop-product::after {
+  content: "--LogoShop--";
+}
+
+.hero__right-hedgehog-product::before, .hero__right-hedgehog-product::after {
+  content: "--Hedgehog--";
+}
+
+.hero__right-photographer-product::before, .hero__right-photographer-product::after {
+  content: "--Photographer--";
+}
+
+.hero__right-ratio-product::before, .hero__right-ratio-product::after {
+  content: "--Ratio--";
+}
+
+.hero__right-sitDownPls-product::before, .hero__right-sitDownPls-product::after {
+  content: "--SitDownPls--";
+}
+
+.hero__right-auto-product::before, .hero__right-auto-product::after {
+  content: "--Sample-Car-Repair--";
+}
+
+.hero__right-cedro-product::before, .hero__right-cedro-product::after {
+  content: "--Cedro--";
+}
+
+.hero__right-highPass-product::before, .hero__right-highPass-product::after {
+  content: "--HighPass--";
+}
+
+.hero__right-cardAnimation-product::before, .hero__right-cardAnimation-product::after {
+  content: "--CardAnimation--";
+}
+
+.hero__right-blanchardMail-product::before, .hero__right-blanchardMail-product::after {
+  content: "--BlanchardMail--";
+}
+
+.hero__right-blanchard-product::before, .hero__right-blanchard-product::after {
+  content: "--Blanchard--";
+}
+
+.hero__right-bootstrap17-product::before, .hero__right-bootstrap17-product::after {
+  content: "--Bootstrap17--";
+}
+
+.hero__right-evklid-product::before, .hero__right-evklid-product::after {
+  content: "--Evklid--";
+}
+
+.hero__right-lagoona-product::before, .hero__right-lagoona-product::after {
+  content: "--Lagoona--";
+}
+
+.hero__right-lionic-product::before, .hero__right-lionic-product::after {
+  content: "--Lionic--";
+}
+/* // Модалки*/
 /*** // hero-1920px***/
 
 
@@ -754,6 +886,20 @@ h4 {
 /*** // Подвал footer-1920px***/
 
 
+@media (max-width: 1385px) {
+  .desrc {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .hero__left img {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 200px;
+    height: 250px;
+  }  
+
+}
 
 @media (max-width: 1024px) {
   .hero__right-list {
