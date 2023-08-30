@@ -899,6 +899,10 @@ button {
     height: 250px;
   }  
 
+  .sticky {
+    top: 20px;
+  }  
+
 }
 
 @media (max-width: 1024px) {
