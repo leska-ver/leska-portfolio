@@ -86,6 +86,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: gray; /* Цвет посещенных ссылок */
+}
+
 h1,
 h2,
 h3,
@@ -212,6 +216,23 @@ button {
   transition: transform 500ms;  
 }
 
+.modal-container::before {
+  top: 20px;
+  left: 20px;
+}
+
+.modal-container::before, .modal-container::after {
+  content: "";
+  position: absolute;
+  font-size: 25px;
+  opacity: .2;
+}
+
+.modal-container::after {
+  bottom: 20px;
+  right: 20px;
+}
+
 /*Крест выключатель модального окна*/
 .modal-close {
   position: absolute;
@@ -243,26 +264,6 @@ button {
 }
 /* // Крест выключатель модального окна*/
 
-.modal-container {
-  position: relative;
-}
-
-.modal-container::before {
-  top: 20px;
-  left: 20px;
-}
-
-.modal-container::before, .modal-container::after {
-  content: "";
-  position: absolute;
-  font-size: 25px;
-  opacity: .2;
-}
-
-.modal-container::after {
-  bottom: 20px;
-  right: 20px;
-}
 
 .modal-info {
   margin: auto;
@@ -780,15 +781,15 @@ button {
 }
 
 .hero__right-hedgehog-product::before, .hero__right-hedgehog-product::after {
-  content: "--Hedgehog--";
+  content: "--Hedgehog(О ёжиках)--";
 }
 
 .hero__right-photographer-product::before, .hero__right-photographer-product::after {
-  content: "--Photographer--";
+  content: "--Фотограф с Казастана--";
 }
 
 .hero__right-ratio-product::before, .hero__right-ratio-product::after {
-  content: "--Ratio--";
+  content: "--Datawarehouse--";
 }
 
 .hero__right-sitDownPls-product::before, .hero__right-sitDownPls-product::after {
@@ -820,11 +821,11 @@ button {
 }
 
 .hero__right-bootstrap17-product::before, .hero__right-bootstrap17-product::after {
-  content: "--Bootstrap17--";
+  content: "--Курсы 3D моделирования--";
 }
 
 .hero__right-evklid-product::before, .hero__right-evklid-product::after {
-  content: "--Evklid--";
+  content: "--Евклид--";
 }
 
 .hero__right-lagoona-product::before, .hero__right-lagoona-product::after {
@@ -901,8 +902,30 @@ button {
     padding: 0 30px;
   }
 
+  .modal-wrap {
+    margin: 20px;
+    max-width: 800px;
+  }  
+
+  .modal-container {
+    padding: 120px 40px;
+  }
+
+  .modal-link {
+    font-size: 35px;
+    line-height: 60px;
+  }  
+
+  .modal-link:not(:last-child) {
+    margin-bottom: 10px;
+  }  
+
   .header__container {
     min-height: 45px;
+  }
+
+  .modal-container::before, .modal-container::after {
+    font-size: 18px;
   }
 
   .hero__top {
@@ -940,15 +963,24 @@ button {
   .hero__right-title {
     margin: 0 0 20px;
   }
+
+  .hero__right-subitem {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 999px) {
   .h2 {
     font-size: 40px;
   }
 
   .h3 {
     font-size: 35px;
+  }
+
+  .modal-wrap {
+    max-width: 600px;
   }
 
   .hero__left {
@@ -978,6 +1010,19 @@ button {
 }
 
 @media (max-width: 768px) {  
+  .modal-wrap {
+    max-width: 400px;
+  }
+
+  .modal-container::before, .modal-container::after {
+    font-size: 15px;
+  }
+
+  .modal-link {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
   .hero__grid {
     display: block;
   }
@@ -997,7 +1042,7 @@ button {
   } 
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 555px) { 
   .h2 {
     font-size: 30px;
   }
@@ -1008,6 +1053,24 @@ button {
 
   .container {
     padding: 0 15px;
+  }
+
+  .modal-wrap {
+    max-width: 350px;
+  }
+
+  .modal-container {
+    padding: 90px 30px;
+  }
+  
+  .modal-close {
+    font-size: 22px;
+    line-height: 1.2;
+  }  
+
+  .modal-link {
+    font-size: 20px;
+    line-height: 1;
   }
 
   .header {
