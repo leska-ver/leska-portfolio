@@ -943,7 +943,7 @@ button {
     margin-bottom: 15px;
     width: 100%;
     max-width: 200px;
-    height: 250px;
+    height: 240px;
   }  
 
   .sticky {
@@ -1107,7 +1107,7 @@ button {
   .hero__left img {
     margin: 0 0 20px;
     max-width: 200px;
-    height: 250px;
+    height: 240px;
   } 
 
   .hero__left-info *:last-of-type {
