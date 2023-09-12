@@ -697,6 +697,10 @@ button {
   background-image: url("../img/cats.jpg");
 }
 
+.hero__right-img_YandexGo {
+  background-image: url("../img/yndexGo.jpg");
+}
+
 .hero__right-sublist {
   text-align: left;
 }
@@ -767,6 +771,10 @@ button {
 }
 
 /*Модалки*/
+.hero__right-yandexGo-product::before, .hero__right-yandexGo-product::after {
+  content: "--scooterYandex--";
+}
+
 .hero__right-cats-product::before, .hero__right-cats-product::after {
   content: "--Cats--";
 }
