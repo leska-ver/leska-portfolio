@@ -701,6 +701,10 @@ button {
   background-image: url("../img/yndexGo.jpg");
 }
 
+.hero__right-img_Dog {
+  background-image: url("../img/doggies.jpg");
+}
+
 .hero__right-sublist {
   text-align: left;
 }
@@ -771,6 +775,10 @@ button {
 }
 
 /*Модалки*/
+.hero__right-dog-product::before, .hero__right-dog-product::after {
+  content: "--Sample-Doggie-Daycare--";
+}
+
 .hero__right-yandexGo-product::before, .hero__right-yandexGo-product::after {
   content: "--scooterYandex--";
 }
