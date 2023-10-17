@@ -89,7 +89,7 @@
               </div>
             </div>
             <div class="hero__right">
-              <h3 class="hero__right-title h3">Портфолио <span class="hero__right-span">(19)</span></h3>
+              <h3 class="hero__right-title h3">Портфолио <span class="hero__right-span">(20)</span></h3>
               <div class="hero__right-checkbox">
                 <input class="hero__right-input" type="radio" id="blue" name="color" />
                 <label class="hero__right-label hero__right-label_blue" id="labelblue" for="blue">Сложный</label>
@@ -100,6 +100,34 @@
                 <input class="hero__right-input" type="radio" id="reset" name="color" checked/>
                 <label class="hero__right-label hero__right-label_reset" id="labelreset" for="reset">Все</label>
                 <ul class="hero__right-list list">
+                  <li class="hero__right-item green">
+                    <button class="hero__right-modalBtn-js modalBtn-js button" data-modal-trigger="trigger-ibrush">
+                      <div class="hero__right-img hero__right-img_Ibrush"><!-- Картинка -->
+                        <ul class="hero__right-sublist">
+                          <li class="hero__right-subitem"><span class="badge--active">Лёгкий</span></li>
+                          <li class="hero__right-subitem"><span>Лендинг</span></li>
+                          <li class="hero__right-subitem"><span>БЭМ</span></li>
+                          <li class="hero__right-subitem"><span>Одностраничный</span></li>
+                          <li class="hero__right-subitem"><span>Grid</span></li>
+                          <li class="hero__right-subitem"><span>Swiper</span></li>
+                          <li class="hero__right-subitem"><span>JS</span></li>
+                          <li class="hero__right-subitem"><span>С адаптивом</span></li>
+                          <li class="hero__right-subitem"><span>ru</span></li>
+                        </ul>
+                      </div>
+                      <div class="hero__right-info">
+                        <div class="hero__right-position"><!--Блок для выравнивание текста-->
+                          <h3 class="hero__right-subtitle">
+                            Тестовый от hh.ru(IBRUSH)
+                          </h3>
+                          <p class="hero__right-subdesrc desrc">
+                            Книги "JavaScript"
+                          </p>
+                        </div>              
+                        <!-- <button>На будущее</button> -->
+                      </div>                      
+                    </button>
+                  </li>
 
                   <li class="hero__right-item red">
                     <button class="hero__right-modalBtn-js modalBtn-js button" data-modal-trigger="trigger-dog">
@@ -134,7 +162,6 @@
                       </div>                      
                     </button>
                   </li>
-
                   <li class="hero__right-item green">
                     <button class="hero__right-modalBtn-js modalBtn-js button" data-modal-trigger="trigger-yndexGo">
                       <div class="hero__right-img hero__right-img_YandexGo"><!-- Картинка -->
@@ -645,6 +672,21 @@
                 </ul> 
                 <div class="hero__right-modals">
 
+                  <div class="hero__right-ibrush modal" data-modal="trigger-ibrush">
+                    <div class="hero__right-ibrush-wrap modal-wrap">
+                      <div class="hero__right-ibrush-product modal-container">
+                        <button class="hero__right-ibrush-close modal-close" title="Закрыть">&#10006;</button>
+                        <div class="hero__right-ibrush-info modal-info">
+                          <a class="hero__right-ibrush-link modal-link" target="_blank" href="https://leska-ver.github.io/books2023/">Сайт: books2023</a>
+                          <a class="hero__right-ibrush-link modal-link" target="_blank" href="https://github.com/leska-ver/books2023/tree/main">Код: books2023</a>
+                          <hr>
+                          <a class="hero__right-ibrush-link modal-link" target="_blank" href="https://leska-ver.github.io/books2023-gulp/app/">Сайт: books2023-gulp</a>
+                          <a class="hero__right-ibrush-link modal-link" target="_blank" href="https://github.com/leska-ver/books2023-gulp/tree/main">Код: books2023-gulp</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="hero__right-dog modal" data-modal="trigger-dog">
                     <div class="hero__right-dog-wrap modal-wrap">
                       <div class="hero__right-dog-product modal-container">
@@ -656,7 +698,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="hero__right-yandexGo modal" data-modal="trigger-yndexGo">
                     <div class="hero__right-yandexGo-wrap modal-wrap">
                       <div class="hero__right-yandexGo-product modal-container">

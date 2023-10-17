@@ -705,6 +705,11 @@ button {
   background-image: url("../img/doggies.jpg");
 }
 
+.hero__right-img_Ibrush {
+  background-image: url("../img/books-ibrush.jpg");
+}
+
+
 .hero__right-sublist {
   text-align: left;
 }
@@ -775,6 +780,10 @@ button {
 }
 
 /*Модалки*/
+.hero__right-ibrush-product::before, .hero__right-ibrush-product::after {
+  content: "--Книги JavaScript--";
+}
+
 .hero__right-dog-product::before, .hero__right-dog-product::after {
   content: "--Sample-Doggie-Daycare--";
 }
