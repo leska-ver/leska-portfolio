@@ -709,6 +709,10 @@ button {
   background-image: url("../img/books-ibrush.jpg");
 }
 
+.hero__right-img_Elka {
+  background-image: url("../img/elka-Max.jpg");
+}
+
 
 .hero__right-sublist {
   text-align: left;
@@ -780,6 +784,9 @@ button {
 }
 
 /*Модалки*/
+.hero__right-elka-product::before, .hero__right-elka-product::after {
+  content: "--Закажи Ёлку--";
+}
 .hero__right-ibrush-product::before, .hero__right-ibrush-product::after {
   content: "--Книги JavaScript--";
 }
