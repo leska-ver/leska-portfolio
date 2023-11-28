@@ -665,6 +665,11 @@ button {
 .hero__right-img_Cedro {
   background-image: url("../img/cedro.jpg");  
 }
+
+.hero__right-img_Aura {
+  background-image: url("../img/aura-Max.jpg");  
+}
+
 .hero__right-img_Auto {
   background-image: url("../img/auto-Jeka.jpg");  
 }
@@ -825,6 +830,10 @@ button {
 
 .hero__right-sitDownPls-product::before, .hero__right-sitDownPls-product::after {
   content: "--SitDownPls--";
+}
+
+.hero__right-aura-product::before, .hero__right-aura-product::after {
+  content: "--Магазин стикеров Aura --";
 }
 
 .hero__right-auto-product::before, .hero__right-auto-product::after {
