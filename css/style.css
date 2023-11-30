@@ -718,6 +718,10 @@ button {
   background-image: url("../img/elka-Max.jpg");
 }
 
+.hero__right-img_Slate {
+  background-image: url("../img/slate.jpg");
+}
+
 
 .hero__right-sublist {
   text-align: left;
@@ -789,6 +793,9 @@ button {
 }
 
 /*Модалки*/
+.hero__right-slate-product::before, .hero__right-slate-product::after {
+  content: "--Slate предназначен для фрилансеров--";
+}
 .hero__right-elka-product::before, .hero__right-elka-product::after {
   content: "--Закажи Ёлку--";
 }
