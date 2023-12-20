@@ -722,6 +722,10 @@ button {
   background-image: url("../img/slate.jpg");
 }
 
+.hero__right-img_SitiPro {
+  background-image: url("../img/siti-pro.jpg");
+}
+
 
 .hero__right-sublist {
   text-align: left;
@@ -793,6 +797,9 @@ button {
 }
 
 /*Модалки*/
+.hero__right-sitiPro-product::before, .hero__right-sitiPro-product::after {
+  content: "--СИТИ ПРО реставрация(восстановление) окон и дверей--";
+}
 .hero__right-slate-product::before, .hero__right-slate-product::after {
   content: "--Slate предназначен для фрилансеров--";
 }
