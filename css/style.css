@@ -726,6 +726,10 @@ button {
   background-image: url("../img/siti-pro.jpg");
 }
 
+.hero__right-img_HealthyFood {
+  background-image: url("../img/healthy-food-Jeka.jpg");
+}
+
 
 .hero__right-sublist {
   text-align: left;
@@ -797,6 +801,9 @@ button {
 }
 
 /*Модалки*/
+.hero__right-healthyFood-product::before, .hero__right-healthyFood-product::after {
+  content: "--HEALTHY SWITCHER(Здоровое питание)--";
+}
 .hero__right-sitiPro-product::before, .hero__right-sitiPro-product::after {
   content: "--СИТИ ПРО реставрация(восстановление) окон и дверей--";
 }
