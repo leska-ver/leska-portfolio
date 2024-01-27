@@ -730,6 +730,10 @@ button {
   background-image: url("../img/healthy-food-Jeka.jpg");
 }
 
+.hero__right-img_CutSpace {
+  background-image: url("../img/cutSpace.jpg");
+}
+
 
 .hero__right-sublist {
   text-align: left;
@@ -801,18 +805,26 @@ button {
 }
 
 /*Модалки*/
+.hero__right-cutSpace-product::before, .hero__right-cutSpace-product::after {
+  content: "--CutSpace(Аренда недвижимости)--";
+}
+
 .hero__right-healthyFood-product::before, .hero__right-healthyFood-product::after {
   content: "--HEALTHY SWITCHER(Здоровое питание)--";
 }
+
 .hero__right-sitiPro-product::before, .hero__right-sitiPro-product::after {
   content: "--СИТИ ПРО реставрация(восстановление) окон и дверей--";
 }
+
 .hero__right-slate-product::before, .hero__right-slate-product::after {
   content: "--Slate предназначен для фрилансеров--";
 }
+
 .hero__right-elka-product::before, .hero__right-elka-product::after {
   content: "--Закажи Ёлку--";
 }
+
 .hero__right-ibrush-product::before, .hero__right-ibrush-product::after {
   content: "--Книги JavaScript--";
 }

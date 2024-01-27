@@ -89,7 +89,7 @@
               </div>
             </div>
             <div class="hero__right">
-              <h3 class="hero__right-title h3">Портфолио <span class="hero__right-span">(25)</span></h3>
+              <h3 class="hero__right-title h3">Портфолио <span class="hero__right-span">(26)</span></h3>
               <div class="hero__right-checkbox">
                 <input class="hero__right-input" type="radio" id="blue" name="color" />
                 <label class="hero__right-label hero__right-label_blue" id="labelblue" for="blue">Сложный</label>
@@ -100,6 +100,39 @@
                 <input class="hero__right-input" type="radio" id="reset" name="color" checked/>
                 <label class="hero__right-label hero__right-label_reset" id="labelreset" for="reset">Все</label>
                 <ul class="hero__right-list list">
+
+                  <li class="hero__right-item green">
+                    <button class="hero__right-modalBtn-js modalBtn-js button" data-modal-trigger="trigger-cutSpace">
+                      <div class="hero__right-img hero__right-img_CutSpace"><!-- Картинка -->
+                        <ul class="hero__right-sublist">
+                          <li class="hero__right-subitem"><span class="badge--active">Лёгкий</span></li>
+                          <li class="hero__right-subitem"><span>БЭМ</span></li>
+                          <li class="hero__right-subitem"><span>Одностраничный</span></li>     
+                          <li class="hero__right-subitem"><span>JS</span></li>
+                          <li class="hero__right-subitem"><span>Grid</span></li>                          
+                          <li class="hero__right-subitem"><span>Swiper</span></li>
+                          <li class="hero__right-subitem"><span>PHP</span></li>
+                          <li class="hero__right-subitem"><span>БД</span></li>
+                          <li class="hero__right-subitem"><span>Forma</span></li>
+                          <li class="hero__right-subitem"><span>Jquery</span></li>
+                          <li class="hero__right-subitem"><span>Модалок(7шт.)</span></li>
+                          <li class="hero__right-subitem"><span>С адаптивом </span></li>
+                          <li class="hero__right-subitem"><span>en</span></li>
+                        </ul>
+                      </div>
+                      <div class="hero__right-info">
+                        <div class="hero__right-position"><!--Блок для выравнивание текста-->
+                          <h3 class="hero__right-subtitle">
+                            CutSpace
+                          </h3>
+                          <p class="hero__right-subdesrc desrc">
+                            Практика. От Жеки(Аренда недвижимости)
+                          </p>
+                        </div>              
+                        <!-- <button>На будущее</button> -->
+                      </div>                      
+                    </button>
+                  </li>
 
                   <li class="hero__right-item red">
                     <button class="hero__right-modalBtn-js modalBtn-js button" data-modal-trigger="trigger-healthyFood">
@@ -128,7 +161,6 @@
                       </div>                      
                     </button>
                   </li>
-
                   <li class="hero__right-item blue">
                     <button class="hero__right-modalBtn-js modalBtn-js button" data-modal-trigger="trigger-sitiPro">
                       <div class="hero__right-img hero__right-img_SitiPro"><!-- Картинка -->
@@ -820,6 +852,18 @@
                 </ul> 
                 <div class="hero__right-modals">
 
+                  <div class="hero__right-cutSpace modal" data-modal="trigger-cutSpace">
+                    <div class="hero__right-cutSpace-wrap modal-wrap">
+                      <div class="hero__right-cutSpace-product modal-container">
+                        <button class="hero__right-cutSpace-close modal-close" title="Закрыть">&#10006;</button>
+                        <div class="hero__right-cutSpace-info modal-info">
+                          <a class="hero__right-cutSpace-link modal-link" target="_blank" href="https://leska-ver.github.io/cutspace/">Сайт: Аренда недвижимости</a>
+                          <a class="hero__right-cutSpace-link modal-link" target="_blank" href="https://github.com/leska-ver/cutspace">Код: Аренда недвижимости</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="hero__right-healthyFood modal" data-modal="trigger-healthyFood">
                     <div class="hero__right-healthyFood-wrap modal-wrap">
                       <div class="hero__right-healthyFood-product modal-container">
@@ -831,7 +875,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="hero__right-sitiPro modal" data-modal="trigger-sitiPro">
                     <div class="hero__right-sitiPro-wrap modal-wrap">
                       <div class="hero__right-sitiPro-product modal-container">
