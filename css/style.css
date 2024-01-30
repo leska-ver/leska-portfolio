@@ -136,11 +136,11 @@ button {
 }
 
 .h2 {
-  font-size: 80px;
+  font-size: clamp(60px, 5vw, 80px);
 }
 
 .h3 {
-  font-size: 60px;
+  font-size: clamp(40px, 5vw, 60px);
   line-height: 1;
 }
 
@@ -149,8 +149,8 @@ button {
   line-height: 1;
 }
 
-.desrc {
-  font-size: 16px;
+.desc {
+  font-size: clamp(13px, 5vw, 15px);
   line-height: 30px;
 }
 
@@ -224,7 +224,7 @@ button {
 .modal-container::before, .modal-container::after {
   content: "";
   position: absolute;
-  font-size: 25px;
+  font-size: clamp(15px, 5vw, 25px);
   opacity: .2;
 }
 
@@ -240,7 +240,7 @@ button {
   right: 15px;
   outline: none; 
   border: 1px solid transparent; 
-  font-size: 25px;
+  font-size: clamp(22px, 5vw, 25px);
   color: var(--color-sanMarino);
   -webkit-transition: color .4s ease-in-out, background-color .4s ease-in-out;
   -ms-transition: color .4s ease-in-out, background-color .4s ease-in-out;
@@ -272,7 +272,7 @@ button {
 .modal-link {
   display: block;
   border-bottom: 2px solid transparent;
-  font-size: 45px;
+  font-size: clamp(20px, 5vw, 45px);
   line-height: 70px;
   color: var(--color-sanMarino);
   -webkit-transition: borde .4s ease-in-out;
@@ -318,7 +318,7 @@ button {
   margin: 0;
   font-family: "NextArt",sans-serif;
   font-weight: 700;
-  font-size: 60px;
+  font-size: clamp(40px, 5vw, 60px);
   line-height: 120%;
 }
 
@@ -384,7 +384,6 @@ button {
   -o-grid-column-span: 3;
   -ms-grid-column-span: 3;
   grid-column: 3 span;
-  margin-right: 25px;
 }    
 
 /* Плавающий блок js - hero__left_id*/
@@ -419,12 +418,12 @@ button {
   margin-bottom: 10px;
 }
 
-.hero__left-desrc {
+.hero__left-desc {
   margin: 0;  
   font-family: 'NextArt', sans-serif;
 }
 
-.hero__left-desrc span {
+.hero__left-desc span {
   font-size: 20px;
   color: var(--color-scorpion);
 }
@@ -965,16 +964,7 @@ button {
 
 
 @media (max-width: 1385px) {
-  .h2 {
-    font-size: 60px;
-  }
-
-  .h3 {
-    font-size: 40px;
-  }
-
-  .desrc {
-    font-size: 14px;
+  .desc {
     line-height: 2;
   }
 
@@ -993,7 +983,6 @@ button {
   }
 
   .modal-link {
-    font-size: 35px;
     line-height: 60px;
   }  
 
@@ -1005,16 +994,8 @@ button {
     min-height: 45px;
   }
 
-  .modal-container::before, .modal-container::after {
-    font-size: 18px;
-  }
-
   .hero__top {
     margin-bottom: 30px;
-  }
-
-  .header__title {    
-    font-size: 40px;
   }
 
   .hero {
@@ -1045,7 +1026,7 @@ button {
     height: 30px;
   }
 
-  .hero__left-desrc span {
+  .hero__left-desc span {
     font-size: 18px;
   }
 
@@ -1063,7 +1044,7 @@ button {
   }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1024px) {
   .h2 {
     font-size: 40px;
   }
@@ -1082,7 +1063,7 @@ button {
     -o-grid-column-span: 5;
     -ms-grid-column-span: 5;
     grid-column: 5 span;
-    margin-right: 5px;
+    margin-right: 10px;
   }
 
   .hero__right {
@@ -1111,12 +1092,7 @@ button {
     max-width: 400px;
   }
 
-  .modal-container::before, .modal-container::after {
-    font-size: 15px;
-  }
-
   .modal-link {
-    font-size: 25px;
     line-height: 1.5;
   }
 
@@ -1126,14 +1102,16 @@ button {
 
   .sticky {
     display: flex;
+    gap: 25px;
   }
 
   .hero__left {
+    margin-right: 0;
     margin-bottom: 20px;
   }
 
   .hero__left img {
-    margin: 0 15px 0 0;
+    margin: 0;
     max-width: 300px;
     height: 353px;
   } 
@@ -1161,12 +1139,10 @@ button {
   }
   
   .modal-close {
-    font-size: 22px;
     line-height: 1.2;
   }  
 
   .modal-link {
-    font-size: 20px;
     line-height: 1;
   }
 
@@ -1187,7 +1163,7 @@ button {
   }
 
   .hero__left img {
-    margin: 0 0 20px;
+    margin: 0 auto 20px;
     max-width: 200px;
     height: 240px;
   } 
@@ -1213,7 +1189,7 @@ button {
     grid-gap: 17px;
   }
 
-  .hero__left-desrc {
+  .hero__left-desc {
     font-size: 13px;
     line-height: 20px;
   }
