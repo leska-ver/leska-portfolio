@@ -734,6 +734,10 @@ button {
   background-image: url("../img/cutSpace.jpg");
 }
 
+.hero__right-img_VeloShop {
+  background-image: url("../img/veloShop.jpg");
+}
+
 
 .hero__right-sublist {
   text-align: left;
@@ -805,6 +809,10 @@ button {
 }
 
 /*Модалки*/
+.hero__right-veloShop-product::before, .hero__right-veloShop-product::after {
+  content: "--ООВЕЛОSHOP(Магазин велосипедов)--";
+}
+
 .hero__right-cutSpace-product::before, .hero__right-cutSpace-product::after {
   content: "--CutSpace(Аренда недвижимости)--";
 }
