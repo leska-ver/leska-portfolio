@@ -737,6 +737,9 @@ button {
   background-image: url("../img/veloShop.jpg");
 }
 
+.hero__right-img_Avtokresla {
+  background-image: url("../img/krylatko.jpg");
+}
 
 .hero__right-sublist {
   text-align: left;
@@ -808,6 +811,10 @@ button {
 }
 
 /*Модалки*/
+.hero__right-avtokresla-product::before, .hero__right-avtokresla-product::after {
+  content: "--КРЫЛАТКО(Магазин автокресел)--";
+}
+
 .hero__right-veloShop-product::before, .hero__right-veloShop-product::after {
   content: "--ООВЕЛОSHOP(Магазин велосипедов)--";
 }
