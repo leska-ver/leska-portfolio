@@ -741,6 +741,10 @@ button {
   background-image: url("../img/krylatko.jpg");
 }
 
+.hero__right-img_FourHorses {
+  background-image: url("../img/fourHorses.jpg");
+}
+
 .hero__right-sublist {
   text-align: left;
 }
@@ -811,6 +815,10 @@ button {
 }
 
 /*Модалки*/
+.hero__right-fourHorses-product::before, .hero__right-fourHorses-product::after {
+  content: "--Шахматный клуб(Четырёх коней)--";
+}
+
 .hero__right-avtokresla-product::before, .hero__right-avtokresla-product::after {
   content: "--КРЫЛАТКО(Магазин автокресел)--";
 }
