@@ -1,8 +1,12 @@
+<h1>Ссылка</h1>
+https://leska-ver.github.io/leska-portfolio/
 <br>
-<h1>Одним кодом пушим</h1> 
+<p>Пуши по отдельности в VSCode</p>
 <br>
-
- - git add . && git commit -m "leska-portfolio" && git push
-
+- git status
 <br>
-<p>Сайт - https://leska-ver.github.io/leska-portfolio/</p> 
+- git add .
+<br>
+- git commit -m "tatarLanguage"
+<br>
+- git push
