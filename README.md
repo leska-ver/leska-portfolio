@@ -12,3 +12,6 @@ https://leska-ver.github.io/leska-portfolio/
 
 <h2>Обновляем страничку, если в Девтулс (DevTools) проект скролить!</h2>
 - ctrl+F5
+
+<h2>Как узнать какой ключ в Гитхабе(github.com)</h2>
+- cat ~/.ssh/id_ed25519.pub
