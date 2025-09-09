@@ -1,7 +1,8 @@
 <h1>Ссылка</h1>
 https://leska-ver.github.io/leska-portfolio/
 <br>
-<p>Пуши по отдельности в VSCode и в консоле!</p>
+
+<h2>Пуши по отдельности в VSCode и в консоле!</h2>
 - git status - вводить чтобы избежать конфлика в киммите.
 <br>
 - git add .
