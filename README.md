@@ -6,6 +6,9 @@ https://leska-ver.github.io/leska-portfolio/
 <br>
 - git add .
 <br>
-- git commit -m "tatarLanguage"
+- git commit -m "leska-portfolio"
 <br>
 - git push
+
+<h2>Обновляем страничку, если в Девтулс (DevTools) проект скролить!</h2>
+- ctrl+F5
