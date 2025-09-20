@@ -71,3 +71,6 @@ ssh -T git@github.com
 New(или + рядом с авой) -> Repository name назвали типа Laguna -> Create repository -> Создали пустую папку на рабочем столе -> в ней Git Bash Here(ПКМ) -> git clone ссылка -> в папку Laguna(которая с Github пришла) кидаем файлы которые надо -> И в этой же папке открываем снова Git Bash Here(ПКМ) - git add . -> git commit -m 'текст' -> git push -> На сайте обновляем страничку Github
 
 После исправления -> В папке нужной ПКМ -> Git Bash Here -> git add . -> git commit -m 'текст' -> git push -> На сайте обновляем страничку Github
+
+## Убрали PHPMailerAutoload.php
+Теперь папку PHPMailer не надо скачивать, просто в файле mail.php используйте простой код без PHPMailer.
