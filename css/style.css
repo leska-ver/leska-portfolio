@@ -745,6 +745,10 @@ button {
   background-image: url("../img/fourHorses.jpg");
 }
 
+.hero__right-img_TruckingBlog {
+  background-image: url("../img/truckingBlog.jpg");
+}
+
 .hero__right-sublist {
   text-align: left;
 }
@@ -815,6 +819,10 @@ button {
 }
 
 /*Модалки*/
+.hero__right-truckingBlog-product::before, .hero__right-truckingBlog-product::after {
+  content: "--Грузовые перевозки--";
+}
+
 .hero__right-fourHorses-product::before, .hero__right-fourHorses-product::after {
   content: "--Шахматный клуб(Четырёх коней)--";
 }
