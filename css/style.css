@@ -18,7 +18,7 @@
   font-family: 'InterRegular';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/Inter-Regularwoff2') format('woff2'), url('../fonts/Inter-Regular.woff') format('woff');
+  src: url('../fonts/Inter-Regular.woff2') format('woff2'), url('../fonts/Inter-Regular.woff') format('woff');
   font-display: swap;
 }
 

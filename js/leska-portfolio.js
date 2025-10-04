@@ -1,7 +1,105 @@
 document.addEventListener('DOMContentLoaded', function() {  
-  //alert('работает');Ищет ошибки по строчно
+  // Считаем количество проэктов. //
+  class PortfolioCounter {
+    constructor() {
+        this.updateAllCounts();
+        // Добавляем наблюдатель за изменениями DOM
+        this.setupMutationObserver();
+    }
+
+    setupMutationObserver() {
+      const observer = new MutationObserver((mutations) => {
+          let shouldUpdate = false;
+          
+          mutations.forEach((mutation) => {
+              if (mutation.type === 'childList') {
+                  // Проверяем, были ли добавлены/удалены элементы портфолио
+                  const addedNodes = Array.from(mutation.addedNodes);
+                  const removedNodes = Array.from(mutation.removedNodes);
+                  
+                  const portfolioItemsChanged = addedNodes.some(node => 
+                      node.classList && node.classList.contains('hero__right-item')
+                  ) || removedNodes.some(node => 
+                      node.classList && node.classList.contains('hero__right-item')
+                  );
+                  
+                  if (portfolioItemsChanged) {
+                      shouldUpdate = true;
+                  }
+              }
+          });
+          
+          if (shouldUpdate) {
+              this.updateAllCounts();
+          }
+      });
+
+      // Наблюдаем за контейнером с элементами портфолио
+      const portfolioContainer = document.querySelector('.hero__right-list');
+      if (portfolioContainer) {
+          observer.observe(portfolioContainer, {
+              childList: true,
+              subtree: true
+          });
+      }
+  }
+
+    updateAllCounts() {
+        // Считаем элементы по типам
+        const greenCount = document.querySelectorAll('.hero__right-item.green').length;
+        const redCount = document.querySelectorAll('.hero__right-item.red').length;
+        const blueCount = document.querySelectorAll('.hero__right-item.blue').length;
+        const totalCount = greenCount + redCount + blueCount;
+
+        // Обновляем общее количество
+        const totalElement = document.querySelector('.hero__right-span');
+        if (totalElement) {
+            totalElement.textContent = `(${totalCount})`;
+        }
+
+        // Обновляем лейблы - ИСПРАВЛЕННАЯ ЧАСТЬ
+        // Находим элементы count-badge по их ID
+        const greenBadge = document.querySelector('#labelgreen .count-badge');
+        const redBadge = document.querySelector('#labelred .count-badge');
+        const blueBadge = document.querySelector('#labelblue .count-badge');
+
+        console.log('Найдены элементы:', {
+            greenBadge: greenBadge,
+            redBadge: redBadge, 
+            blueBadge: blueBadge
+        });
+
+        if (greenBadge) {
+            greenBadge.textContent = `(${greenCount})`;
+        } else {
+            console.log('❌ Не найден greenBadge');
+        }
+        
+        if (redBadge) {
+            redBadge.textContent = `(${redCount})`;
+        } else {
+            console.log('❌ Не найден redBadge');
+        }
+        
+        if (blueBadge) {
+            blueBadge.textContent = `(${blueCount})`;
+        } else {
+            console.log('❌ Не найден blueBadge');
+        }
+
+        console.log('📊 Автоматический подсчёт:');
+        console.log(`🟢 Лёгких: ${greenCount}`);
+        console.log(`🔴 Средних: ${redCount}`);
+        console.log(`🔵 Сложных: ${blueCount}`);
+        console.log(`📦 Всего: ${totalCount}`);
+    }
+}
+
+  // Создаем глобальную переменную для доступа из консоли
+  window.portfolioCounter = new PortfolioCounter();
 
 
+  
   // Модальное окно для нескольких окон. Модалка не прокручиваеться.//
   const activeClass = "modal-active";
   const buttons = document.querySelectorAll(".modalBtn-js");
@@ -41,6 +139,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   };
 
-    
 
+
+
+  
 });
