@@ -749,6 +749,10 @@ button {
   background-image: url("../img/truckingBlog.jpg");
 }
 
+.hero__right-img_Maya {
+  background-image: url("../img/MAYA.jpg");
+}
+
 .hero__right-sublist {
   text-align: left;
 }
@@ -819,6 +823,10 @@ button {
 }
 
 /*Модалки*/
+.hero__right-maya-product::before, .hero__right-maya-product::after {
+  content: "--Магазин белья для будущих мам--";
+}
+
 .hero__right-truckingBlog-product::before, .hero__right-truckingBlog-product::after {
   content: "--Грузовые перевозки--";
 }
