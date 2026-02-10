@@ -11,7 +11,7 @@ New(или + рядом с авой) -> Repository name назвали типа 
 Settings -> Pages -> в Branch выбираем main, жмём Save. в Custom domain пишим название https://leska-ver.github.io/leska-portfolio/, жмём Save.
 
 <h2>Пуши по отдельности в VSCode и в консоле!</h2>
-- git status - вводить чтобы избежать конфлика в киммите.
+- git status - вводить чтобы избежать конфлика в коммите.
 <br>
 - git add .
 <br>
