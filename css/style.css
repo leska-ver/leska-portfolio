@@ -144,14 +144,9 @@ button {
   line-height: 1;
 }
 
-.h4 {
-  font-size: 20px;
-  line-height: 1;
-}
-
 .desc {
-  font-size: clamp(13px, 5vw, 15px);
-  line-height: 30px;
+  font-size: clamp(15px, 5vw, 18px);
+  line-height: 1.6;
 }
 
 .button {/*Стили забрала у hero__right-item*/
@@ -398,7 +393,7 @@ button {
   object-fit: cover;
 }
 
-.sticky {
+/* .sticky {
   position: sticky;
   top: 40px;
   display: -webkit-block;
@@ -406,7 +401,7 @@ button {
   display: -o-block;
   display: -ms-block;
   display: block;  
-}
+} */
 /* // Плавающий блок js - hero__left_id*/
 
 .hero__left-info {
@@ -424,7 +419,7 @@ button {
 }
 
 .hero__left-desc span {
-  font-size: 20px;
+  font-size: clamp(13px, 5vw, 16px);
   color: var(--color-scorpion);
 }
 
@@ -442,7 +437,7 @@ button {
   display: inline-block;
   margin-bottom: 15px;
   border: 2px solid transparent;
-  font-size: 18px;
+  font-size: clamp(15px, 5vw, 18px);
   font-weight: 700;
   color: var(--color-sanMarino);
   -webkit-transition: borde .4s ease-in-out;
@@ -811,7 +806,7 @@ button {
   margin: 0 0 5px 0;
   font-weight: 600;
   font-family: 'InterRegular', sans-serif;
-  font-size: 20px;
+  font-size: clamp(16px, 5vw, 20px);
   line-height: 120%;
   color: var(--color-white);
 }
