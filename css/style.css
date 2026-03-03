@@ -87,7 +87,7 @@ a {
 }
 
 a:visited {
-  color: #84aaad; /* Цвет посещенных ссылок */
+  color: #5f8a92; /* Цвет посещенных ссылок */
 }
 
 h1,
@@ -1034,10 +1034,6 @@ button {
     max-width: 200px;
     height: 240px;
   }  
-
-  .sticky {
-    top: 17px;
-  } 
   
   .hero__left-list-icone {
     -webkit-grid-template-columns: repeat(2, 30px);
@@ -1128,7 +1124,8 @@ button {
 
   .sticky {
     display: flex;
-    gap: 25px;
+    gap: 20px;
+    align-items: flex-start; /* чтобы фото не растягивалось по высоте */
   }
 
   .hero__left {
@@ -1138,8 +1135,9 @@ button {
 
   .hero__left img {
     margin: 0;
-    max-width: 300px;
-    height: 353px;
+    max-width: 200px;
+    width: 100%; /* чтобы на совсем узких экранах сжималось */
+    height: auto; /* высота подстроится автоматически */
   } 
 }
 
