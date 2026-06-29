@@ -42,6 +42,12 @@ html {
   box-sizing: border-box;
 }
 
+html {
+  /* Это запрещает браузеру менять размер шрифта на своё усмотрение. */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 *, 
 *::before, 
 *::after {
@@ -320,7 +326,7 @@ button {
   width: 100%;
   height: 45%;
   font-size: clamp(80px, 10vw, 150px);
-  background: repeating-linear-gradient(45deg, rgba(255, 0, 0, 0.7) 0px, rgba(255, 0, 0, 0.7) 20px, rgba(255, 255, 255, 0.7) 20px, rgba(255, 255, 255, 0.7) 40px);
+  background: repeating-linear-gradient(45deg, rgba(255, 0, 0, .8) 0px, rgba(255, 0, 0, .8) 20px, rgba(255, 255, 255, .8) 20px, rgba(255, 255, 255, .8) 40px);
   text-shadow: 0 0 15px rgba(255, 255, 255, .9); /* белое свечение для эмодзи*/
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   transform: translate(-50%, -60%);
