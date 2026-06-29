@@ -295,6 +295,53 @@ button {
 }
 /*** // modal-Модальное окно***/
 
+/*Строительная лента*/
+.under-construction {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.under-construction::before,
+.under-construction::after {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  pointer-events: none;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.under-construction::before {
+  content: "🛠";
+  top: 50%;
+  border-radius: 5px;
+  width: 100%;
+  height: 45%;
+  font-size: clamp(80px, 10vw, 150px);
+  background: repeating-linear-gradient(45deg, rgba(255, 0, 0, 0.7) 0px, rgba(255, 0, 0, 0.7) 20px, rgba(255, 255, 255, 0.7) 20px, rgba(255, 255, 255, 0.7) 40px);
+  text-shadow: 0 0 15px rgba(255, 255, 255, .9); /* белое свечение для эмодзи*/
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -60%);
+  opacity: 0.9;
+}
+
+.under-construction::after {
+  content: "В разработке";
+  top: 53%;
+  padding: 8px 20px;
+  width: max-content;
+  height: 10%;
+  font-weight: 300;
+  font-size: clamp(24px, 3vw, 48px);
+  letter-spacing: 2px;
+  color: #fff;
+  background: rgba(200, 30, 30, 0.85);
+}
+/* // Строительная лента*/
+
+
 /***Шапка header-1920px***/
 .header {
   position: relative;
@@ -744,6 +791,10 @@ button {
   background-image: url("../img/truckingBlog.jpg");
 }
 
+.hero__right-img_technoStore {
+  background-image: url("../img/techno-store-Jeka.jpg");
+}
+
 .hero__right-img_Maya {
   background-image: url("../img/MAYA.jpg");
 }
@@ -818,6 +869,10 @@ button {
 }
 
 /*Модалки*/
+.hero__right-technoStore-product::before, .hero__right-technoStore-product::after {
+  content: "--Магазин компьютерной техники и аксессуаров--";
+}
+
 .hero__right-maya-product::before, .hero__right-maya-product::after {
   content: "--Магазин белья для будущих мам--";
 }
