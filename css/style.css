@@ -1076,6 +1076,17 @@ button {
     margin-bottom: 10px;
   }  
 
+  /* Строительная лента*/
+  /* Гаечный ключ (картинка) */
+  .under-construction::after {
+    top: 25%;
+  }
+
+  .under-construction-text {
+    top: 50%;
+  }
+  /* // Строительная лента*/
+
   .header__container {
     min-height: 45px;
   }
