@@ -140,6 +140,15 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
 
+    // Скрипт добавляет дочерний элемент .under-construction-text
+    document.querySelectorAll('.under-construction').forEach(function(parent) {
+        if (!parent.querySelector('.under-construction-text')) {
+        var child = document.createElement('div');
+        child.className = 'under-construction-text';
+        child.textContent = 'В разработке';
+        parent.appendChild(child);
+        }
+    });
 
 
   
